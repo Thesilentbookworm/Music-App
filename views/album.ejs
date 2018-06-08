@@ -1,0 +1,88 @@
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+
+<style>
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  .hey {
+    font-family: cambria;
+  }
+  
+  .brand-logo{
+    font-family: cambria;
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper #7e57c2 blue-grey darken-1">
+      <a href="/" class="brand-logo">Home</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class-"hey" href="/about">About App</a></li>
+        <li><a class-"hey" href="/portfolio">Portfolio</a></li>
+        <li><a class-"hey" href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <h1 class="hey">Album</h1>
+  <% var album = data.albums.items[0] %> 
+  <% console.log(Object.keys(album)) %>
+  
+  <!-- [ 'album_type',
+  'artists',
+  'available_markets',
+  'external_urls',
+  'href',
+  'id',
+  'images',
+  'name',
+  'release_date',
+  'release_date_precision',
+  'type',
+  'uri' ] -->
+    <div>
+      <h2 class="hey">Name: <%= album.name %></h2>
+      <p class="hey">Artist: <%= album.artists[0].name %></p>
+      <p class="hey">Release Date: <%= album.release_date %></p>
+      <p class="hey">Type: <%= album.album_type %></p>
+      <img class="yo" src="<%= album.images[0].url %>"/>
+    </div>       
+  </div>
+  <footer class="page-footer #7e57c2 blue-grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Extra</h5>
+                <p class= "hey">These are apps where you can listen to music!</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.pandora.com/">Pandora</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.spotify.com/">Spotify</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+</body>

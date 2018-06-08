@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+  <style>
+     body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  p {
+    text-indent: 1px;
+  }
+  .hey {
+    font-family: cambria;
+  }
+  
+  .brand-logo {
+    font-family: cambria;
+  }
+  </style>
+</head>
+<body>
+<nav>
+    <div class="nav-wrapper #546e7a blue-grey darken-1">
+      <a href="/" class="brand-logo">Home</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class= "hey" href="/about">About App</a></li>
+        <li><a class= "hey" href="/portfolio">Portfolio</a></li>
+        <li><a class= "hey" href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <h1 class="hey">About App</h1>
+      <img src="https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif" width="250" height="250" />
+      <p class="hey"> This app uses the Spotify API that allows us to recieve their music data. The music data given to us by the 
+      Spotify API was the artist, album, playlist, and track. We used this data to create our app and give the user the 
+      option to choose what they want to view.
+      </p>
+      <p class="hey"> Each page in this app contains a header and a footer. The header gives the user the option to return to the 
+      Home page, to got to the About Us page, the Portfolio page, and the Contact Us page. The footer contains links that
+      give the user the option to go to different music apps that allow a person to listen to music. 
+      </p>
+      <p class= "hey"> In the Home page, there is a search bar where the user types in a key word related to what they want to look up.
+      At the bottom of the search bar, the user has the option of choosing the artist, album, playlist, and track. The user
+      clicks the submit button and they are taken to a page that contains the information they searched for. Depending on the 
+      option that user chose, they will either be taken to the Artist page, Album page, Playlist page, or the Track page.
+      </p>
+      <p> This app was created to make a user's life easier when searching for information about their favorite artists,
+      albums, playlists, and tracks. 
+      </p>
+  </div>
+      
+  <footer class="page-footer #546e7a blue-grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Extra</h5>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <p class= "hey">These are apps where you can listen to music!</p>
+                <ul>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.pandora.com/">Pandora</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.spotify.com/">Spotify</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+</body>

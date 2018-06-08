@@ -1,0 +1,73 @@
+<head>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+  
+<style>
+    body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  
+  .hey {
+    font-family: cambria;
+  }
+  
+  .brand-logo{
+    font-family: cambria;
+  }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper #7e57c2 blue-grey darken-1">
+      <a href="/" class="brand-logo">Home</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class-"hey" href="/about">About App</a></li>
+        <li><a class-"hey" href="/portfolio">Portfolio</a></li>
+        <li><a class-"hey" href="/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+      <h1 class= "hey">Playlist</h1>
+       <% var playlist = data.playlists.items[0] %> 
+  <% console.log(Object.keys(playlist)) %>
+    <div>
+      <h2 class="hey">Name: <%= playlist.name %></h2>
+      <p class="hey">Tracks: <%= playlist.tracks.total %></p>
+      <img class="yo" src="<%= playlist.images[0].url %>"/>
+    </div>  
+  </div>
+  <footer class="page-footer #7e57c2 blue-grey darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Extra</h5>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <p class= "hey">These are apps where you can listen to music!</p>
+                <ul>
+                  <li><a class=" hey grey-text text-lighten-3" href="https://www.youtube.com/">Youtube</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.pandora.com/">Pandora</a></li>
+                  <li><a class="hey grey-text text-lighten-3" href="https://www.spotify.com/">Spotify</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2018 Copyright Text
+            </div>
+          </div>
+        </footer>
+</body>
