@@ -9,7 +9,7 @@ var cookieParser = require('cookie-parser')
 var client_id = '89603cab108e4a20b0f6ed3e01b53139' // Your client id
 var client_secret = 'f8968804776e4aab9b96bc0ddf579642' // Your secret
 var redirect_uri = 'https://html-thesilentbookworm.c9users.io/callback' // Your redirect uri
-var access_token = 'BQAVk9fBKlGWbHgu8Jp7lo4DkA6lb5JZyps-aYbDRQLT93rI4S_HM4-B48fpobbK-cuATl7D6fcTNypSWY0hr7us55lN9t0_g_i7Mi8FrAD5HTvX_WD8vu9q9gWvU2du5VbtDfSehjPk4D5Mo4KJ9D_sjAjIfKCrIaLPpo_Phs31En31UQ'
+var access_token = 'BQDCTvvt267T6tt5ROCmbuPOoC6kc_bOcKIr1nhXmVMUU4Bgm_t3Gl1aSjUu0V-O573_UBaMnd3wkN7-BMtxLIYDWxitcLpDaMa_uJLSgQnxxYG5MxU3c8OgJ8T-y9SgmnntUIhp3FUGP7ypw0jOccx4MnCsolb0EvXQDeuhxnsDMskFJw'
 
 var server = express()
 
